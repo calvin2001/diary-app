@@ -1,5 +1,8 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import NewDiary from './NewDiary';
+import DiaryList from './DiaryList';
+import DiaryView from './DiaryView';
+import DiaryEdit from './DiaryEdit';
 
 function App() {
   return (
@@ -13,10 +16,10 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<div>📚 일기 목록 페이지</div>} />
+        <Route path="/" element={<DiaryList />} />
         <Route path="/new" element={<NewDiary />} />
-        <Route path="/edit/:id" element={<div>🛠️ 일기 수정</div>} />
-        <Route path="/view/:id" element={<div>🔍 일기 상세</div>} />
+        <Route path="/edit/:id" element={<DiaryEdit />} />
+        <Route path="/view/:id" element={<DiaryView />} />
       </Routes>
     </div>
   );
