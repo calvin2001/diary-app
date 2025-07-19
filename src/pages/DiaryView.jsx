@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import { DiaryContext } from "./DiaryContext";
+import { DiaryContext } from "../context/DiaryContext";
 import { Link } from "react-router-dom";
 
 function DiaryView() {
@@ -27,7 +27,7 @@ function DiaryView() {
     };
 
     return (
-        <div style={{padding: '20px'}}>
+        <div style={{padding: '20px', textAlign: 'center'}}>
             <h2>🔍 일기 상세</h2>
             <h3>{diary.title}</h3>
             <p><strong>날짜:</strong> {diary.date}</p>

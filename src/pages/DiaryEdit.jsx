@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
-import { DiaryContext } from "./DiaryContext";
+import { DiaryContext } from "../context/DiaryContext";
 
 function DiaryEdit() {
     const { id } = useParams();
